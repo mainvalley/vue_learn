@@ -29,8 +29,8 @@
   				<form class="d-flex">
   					<button
   					class="btn btn-primary"
-  					@click.prevent="useDarkNavbar = !useDarkNavbar"
-  					>Toggle Navbar</button>
+  					@click.prevent="changeTheme()"
+  					>Toggle</button>
   				</form>
   		</div>
   	</nav>
@@ -46,7 +46,7 @@
 			data(){
 				return{
 					activePage:0,
-					theme: 'dark',
+					theme: 'light',
 					pages: [
 						{
 							link:{ text:'Home', url:'index.html'}, 
@@ -70,7 +70,7 @@
 				};
 
 			},
-			/*methods:{
+			methods:{
 					changeTheme(){
 						let theme= 'light';
 						if(this.theme=='light'){
@@ -79,7 +79,7 @@
 						this.theme= theme;
 					}
 				}
-*/
+
 		}).mount('body');
 	</script>
 </body>

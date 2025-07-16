@@ -1,17 +1,27 @@
 Follow these steps to upload your project to GitHub:
 
 git init
-
 git add .
-
 git commit -m "Add all my files"
-
 git remote add origin https://github.com/yourusername/your-repo-name.git
-
 Upload of the project from scratch requires git pull origin master.
-
 git pull origin master
-
 git push origin master
-
 If any problem occurs in pushing, use git push --force origin master.
+
+**Uploading files to your new repository:**
+
+cd your_project_directory
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <repository_URL>
+git pull origin main 
+git push -u origin main
+Updating Files on GitHub:
+
+# Make changes locally in your project
+# Stage, commit, and push changes to GitHub
+git add .
+git commit -m “Brief description of changes”
+git push origin main
