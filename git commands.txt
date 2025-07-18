@@ -25,3 +25,12 @@ Updating Files on GitHub:
 git add .
 git commit -m “Brief description of changes”
 git push origin main
+
+
+**Uploading files into new branch**
+git checkout -b update-readme
+Switched to a new branch 'update-readme'
+git status
+git add README.md
+git commit -m "Update readme for GitHub"
+git push origin update-readme
